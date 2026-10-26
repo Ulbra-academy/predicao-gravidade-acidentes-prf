@@ -1,7 +1,7 @@
-# Relatório Técnico — Predição de Gravidade de Acidentes em Rodovias Federais (PRF)
+# Relatório Técnico - Predição de Gravidade de Acidentes em Rodovias Federais (PRF)
 
 **Disciplina:** Aprendizado de Máquina (G2)  
-**Integrantes:** Danilo Fernandes Araujo Gama, [Nome do Integrante 2], [Nome do Integrante 3]  
+**Integrantes:** Danilo Fernandes Araujo Gama, [Nome do Integrante 2], Lucas da Silva Nascimento  
 **Data de Entrega:** 07/12/2026
 
 ---
@@ -13,7 +13,7 @@ As rodovias federais brasileiras concentram grande parte do fluxo de cargas e pa
 > *Dado o registro inicial das circunstâncias ambientais, temporais e viárias de um acidente em rodovia federal, é possível prever o nível de gravidade da ocorrência (`classificacao_acidente`)?*
 
 ### 1.2. Fonte e Características da Base Bruta
-* **Fonte:** Polícia Rodoviária Federal (PRF) — [Portal de Dados Abertos da PRF](https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos/dados-abertos-da-prf).
+* **Fonte:** Polícia Rodoviária Federal (PRF) - [Portal de Dados Abertos da PRF](https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos/dados-abertos-da-prf).
 * **Unidade amostral:** Acidentes agrupados por ocorrência (`datatran`), onde cada linha representa um único evento viário.
 * **Critérios de exclusão a priori (Prevenção de *Data Leakage*):** As variáveis `mortos`, `feridos_graves`, `feridos_leves`, `ilesos`, `feridos`, `ignorados` e `pessoas` determinam algebricamente a variável-alvo `classificacao_acidente` e só são consolidadas após o atendimento completo da ocorrência. Portanto, foram excluídas antes de qualquer etapa de modelagem.
 
